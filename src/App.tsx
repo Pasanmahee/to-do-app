@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import { Form, Input, Button } from 'antd';
 import StyledForm from './styles/StyledForm';
 import './App.less';
 
@@ -6,12 +7,12 @@ class App extends React.Component {
   render() {
     return (
       <StyledForm>
-      <form>
-        <input type="text" placeholder="Full name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Password" />
-        <button>Sign In</button>
-      </form>
+      <Form>
+        <Input type="text" placeholder="Full name" />
+        <Input type="text" placeholder="Email" />
+        <Input type="text" placeholder="Password" />
+        <Button>Sign In</Button>
+      </Form>
     </StyledForm>
     )
   }
